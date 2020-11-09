@@ -236,7 +236,7 @@ public class BST<E extends Comparable<E>>{
             node.left=node.right=null;
             return rightMin;
         }else if(e.compareTo(node.e)<0){
-            node.right=delete(node.left,e);
+            node.left=delete(node.left,e);
         }else {
             node.right=delete(node.right,e);
         }
